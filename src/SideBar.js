@@ -7,11 +7,11 @@ class SideBar extends Component {
         return (
             <nav className="App-sidebar">
                 <img src={logo} className="App-logo" alt="logo" />
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
+                <a href="#" onClick={() => { this.props.onPageSelect('Home'); }}>Home</a>
+                <a href="#" onClick={() => { this.props.onPageSelect('About'); }}>About</a>
+                <a href="#" onClick={() => { this.props.onPageSelect('Services'); }}>Services</a>
+                <a href="#" onClick={() => { this.props.onPageSelect('Clients'); }}>Clients</a>
+                <a href="#" onClick={() => { this.props.onPageSelect('Contact'); }}>Contact</a>
             </nav>
         );
     }
